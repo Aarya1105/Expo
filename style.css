@@ -1,0 +1,71 @@
+/* ======================
+   GLOBAL RESET
+====================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,body{
+    width:100%;
+    height:100%;
+    background:black;
+    color:white;
+    font-family: monospace;
+}
+
+/* VERY IMPORTANT */
+body{
+    overflow:hidden;   /* required for locomotive */
+}
+
+#main{
+min-height:100vh;
+}
+
+/* BIG GAP BETWEEN SCENES */
+.panel{
+min-height:120vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:100px 40px;
+}
+/* TEXT PANELS */
+.text-panel{
+background:black;
+}
+
+/* IMAGE PANELS */
+.image-panel{
+background:black;
+}
+
+img{
+width:65%;
+height:auto;
+display:block;
+margin:60px auto;
+border-radius:15px;
+opacity:0;
+transform:translateY(120px) scale(0.9);
+}
+
+.typing{
+font-size:3rem;
+max-width:900px;
+line-height:1.4;
+border-right:3px solid white;
+overflow:auto;
+white-space:nowrap;
+width:auto;
+
+
+/* FIXED */
+white-space:normal;   /* allow multiple lines */
+overflow:hidden;
+display:inline-block;
+}
